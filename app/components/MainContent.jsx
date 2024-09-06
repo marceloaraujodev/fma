@@ -1,5 +1,6 @@
 import Form from './Form/Form';
 import Session from './Session/Session';
+import Hero from './Hero/Hero';
 import c from './MainContent.module.css';
 
 export default function MainContent() {
@@ -19,9 +20,9 @@ export default function MainContent() {
           {/* <span className={c.plainText}>Agency.</span> */}
         </div>
       </div>
-      {/* <Session>
-
-      </Session> */}
+      <Session>
+        <Hero />
+      </Session>
  
       <Session>
         <Form />

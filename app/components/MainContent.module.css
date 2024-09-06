@@ -1,12 +1,9 @@
 .content{
   flex-grow: 1;
-  padding: 20px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width: 2100px;
 }
 
 .loopEffectContainer {
@@ -16,13 +13,12 @@
 }
 .titleContainer{
   position: relative;
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: 900;
-  letter-spacing: -4.2px;
+  letter-spacing: -3.2px;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
-
 }
 /* text transparent passes the background color, background clip, cuts to the text */
 .colorEffect{
@@ -78,8 +74,16 @@
   76.66%, 96.66% { color: transparent; }
 }
 
-/* @keyframes fadeIn {
-  100%{
-    opacity: 1;
+@media screen and (max-width: 500px){
+  .loopEffectContainer{
+    display: block;
+    width: 100%;
   }
-} */
+  .titleContainer{
+    font-size: 13vw;
+    letter-spacing: -1.2px;
+    margin: 0 0;
+    line-height: 74px;
+  }
+
+}
