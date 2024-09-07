@@ -1,9 +1,18 @@
+import Image from 'next/image';
 import c from './Hero.module.css';
 export default function Hero() {
   return (
     <div className={c.container}>
       <div className={c.blockLeft}>
-        <img className={c.img} src="/mountain_fullsize.webp" alt="mountain" />
+        <Image
+          src="/mountain_fullsize.webp" 
+          alt="description" 
+          width={600}  // Arbitrary width (for Next.js optimization, but it will be controlled by CSS)
+          height={400}
+          className={c.img}
+          style={{ width: '100%', height: 'auto' }}
+          priority
+        />
       </div>
       <div className={c.blockRight}>
         <div className={c.highContainer}>
