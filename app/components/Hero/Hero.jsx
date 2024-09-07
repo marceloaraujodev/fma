@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={c.blockRight}>
         <div className={c.highContainer}>
           <div className={c.description}>
-            <h2 className={c.new}>Cloud native mobile apps</h2>
+            <p className={c.new}>Cloud native mobile apps</p>
             Mobile apps are playing an increasingly integral part in delivering
             users the best experience. We develop high performance mobile apps
             that deliver an unmatched experience for users around the world.
