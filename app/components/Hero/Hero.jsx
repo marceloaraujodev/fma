@@ -23,7 +23,7 @@ export default function Hero() {
             that deliver an unmatched experience for users around the world.
             <br />
             <br />
-            Take your user's digital experience to a new level with an app that
+            Take your users digital experience to a new level with an app that
             will wow them.
           </div>
           <button className={c.btn}>Conheça</button>
