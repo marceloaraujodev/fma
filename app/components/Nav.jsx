@@ -1,16 +1,37 @@
-import { FaMobileAlt } from 'react-icons/fa';
+'use client'
+import { useState } from 'react';
+import { firstobileAlt } from 'react-icons/fa';
 import { GiWorld } from 'react-icons/gi';
 import { FaSearchDollar } from 'react-icons/fa';
 import { FaPeopleGroup } from 'react-icons/fa6';
 import { GiAmpleDress } from 'react-icons/gi';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import Image from 'next/image';
 
 import c from './Nav.module.css';
 export default function Nav() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function handleClick() {
+    setShowMenu(!showMenu)
+
+  }
+
+  
+
+
   return (
     <header className={c.nav}>
       <nav className={c.navMenu}>
-        <div className={c.logo}>F.M.A </div>
+        <div className={c.logo}>
+          <Image 
+           src="/logo2.png"
+            width={300} 
+            height={100}
+            style={{width: 'auto', height:'200'}}
+            className={c.logoImg}
+          />
+        </div>
         <div className={c.navLinks}>
           <div className={c.service}>Serviços</div>
           <div className={c.dropDown}>
@@ -66,6 +87,28 @@ export default function Nav() {
         </div>
         <div className={c.navLinks}>
           <span>Empresa</span>
+        </div>
+
+        <div className={c.smallMenu} onClick={handleClick}>
+          <RxHamburgerMenu />
+          <div className={`${showMenu ? c.smallMenuDropDown : `${c.smallMenuDropDown} ${c.hide}`}`}>
+            <ul>
+              <li >
+                  <p onClick={() => console.log('web')}>Web</p>
+              </li>
+
+              <li >
+                  <p >Campanhas</p>
+              </li>
+              <li >
+                  <p >Consultoria</p>
+              </li>
+              <li >
+                  <p >SEO</p>
+              </li>
+
+            </ul>
+          </div>
         </div>
       </nav>
       <div className={c.btnCont}>

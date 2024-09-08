@@ -1,0 +1,30 @@
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+.loop{
+  color: white;
+  width: 100%;
+  animation: infiniteLoop 35s infinite linear;
+}
+.clients{
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.img{
+  opacity: .9;
+}
+@keyframes infiniteLoop {
+  0% {
+    /* transform: translateX(0%); */
+    transform: translateX(100%);
+  }
+  50%{
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}

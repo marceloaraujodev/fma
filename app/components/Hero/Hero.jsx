@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import c from './Hero.module.css';
-export default function Hero() {
+export default function Hero({title, className, img, description, btnText}) {
+    // Dynamically combine the container class with the reverse class (if provided)
+    const containerClass = `${c.container} ${className === 'reverse' ? c.reverse : ''}`;
+  
   return (
-    <div className={c.container}>
+    <div className={containerClass}>
       <div className={c.blockLeft}>
         <Image
-          src="/mountain_fullsize.webp" 
-          alt="description" 
+          src={img}
+          alt={title}
           width={600}  // Arbitrary width (for Next.js optimization, but it will be controlled by CSS)
           height={400}
           className={c.img}
@@ -17,16 +20,10 @@ export default function Hero() {
       <div className={c.blockRight}>
         <div className={c.highContainer}>
           <div className={c.description}>
-            <p className={c.new}>Cloud native mobile apps</p>
-            Mobile apps are playing an increasingly integral part in delivering
-            users the best experience. We develop high performance mobile apps
-            that deliver an unmatched experience for users around the world.
-            <br />
-            <br />
-            Take your users digital experience to a new level with an app that
-            will wow them.
+            <p className={c.new}>{title}</p>
+            {description}
           </div>
-          <button className={c.btn}>Conheça</button>
+          <button className={c.btn}>{btnText}</button>
         </div>
       </div>
     </div>

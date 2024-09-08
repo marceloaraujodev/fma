@@ -1,12 +1,14 @@
 .container{
   /* border: 1px red solid; */
   width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
 }
-
+.container.reverse{
+  flex-direction: row-reverse;
+}
 .blockLeft{
-  /* border: 1px blue solid; */
   width: 55%;
   object-fit: cover;
 }
@@ -25,7 +27,7 @@
   flex-grow: 1;
   height: auto;
   overflow: visible;
-  padding: 60px;
+  padding: 40px;
 }
 .new{
   font-size: 2rem;
@@ -46,4 +48,18 @@
   font-size: 1.06rem;
   padding: 16px 32px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blockLeft{
+    width: 100%;
+    object-fit: cover;
+  }
+  .blockRight{
+    width: 100%;
+  }
 }

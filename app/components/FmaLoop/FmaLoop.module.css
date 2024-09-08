@@ -1,0 +1,82 @@
+
+.loopEffectContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.titleContainer{
+  position: relative;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: -3.2px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+/* text transparent passes the background color, background clip, cuts to the text */
+.colorEffect{
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  z-index: 5; 
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  color: white; 
+}
+
+.plainText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+  opacity: 1;
+  color: white;
+  animation: fadeIn 4s ease-in-out infinite;
+  
+}
+
+.gradient1 {
+  background-image: linear-gradient(341deg, #07FFE1 23%, #524add 90%);
+  animation-name: fadeInOut;
+}
+
+.gradient2 {
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  animation-name: fadeInOut2;
+}
+
+.gradient3 {
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+  animation-name: fadeInOut3;
+}
+
+@keyframes fadeInOut {
+  0%, 40%, 100% { color: white; }
+  10%, 30% { color: transparent; }
+}
+
+@keyframes fadeInOut2 {
+  0%, 33.33%, 73.33%, 100% { color: white; }
+  43.33%, 63.33% { color: transparent; }
+}
+
+@keyframes fadeInOut3 {
+  0%, 66.66%, 100% { color: white; }
+  76.66%, 96.66% { color: transparent; }
+}
+
+@media screen and (max-width: 500px){
+  .loopEffectContainer{
+    display: block;
+    width: 100%;
+  }
+  .titleContainer{
+    font-size: 13vw;
+    letter-spacing: -1.2px;
+    margin: 0 0;
+    line-height: 74px;
+  }
+
+}

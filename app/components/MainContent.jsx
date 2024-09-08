@@ -1,32 +1,58 @@
 import Form from './Form/Form';
 import Session from './Session/Session';
 import Hero from './Hero/Hero';
+import Loop from './ClientLoop/ClientLoop';
+import FmaLoop from './FmaLoop/FmaLoop';
 import c from './MainContent.module.css';
 
 export default function MainContent() {
+
   return (
     <main className={c.content}>
-      <div className={c.loopEffectContainer}>
-        <div className={c.titleContainer}>
-          <span className={`${c.colorEffect} ${c.gradient1}`}>Fashion.</span>
-          {/* <span className={c.plainText}>Fashion.</span> */}
-        </div>
-        <div className={c.titleContainer}>
-          <span className={`${c.colorEffect} ${c.gradient2}`}>Marketing.</span>
-          {/* <span className={c.plainText} >Marketing.</span> */}
-        </div>
-        <div className={c.titleContainer}>
-          <span className={`${c.colorEffect} ${c.gradient3}`}>Agency.</span>
-          {/* <span className={c.plainText}>Agency.</span> */}
-        </div>
-      </div>
+      {/* <Session>
+        <FmaLoop />
+      </Session>
+
+      
       <Session>
-        <Hero />
+        <Hero 
+          title='SEO Search Engine Optimization'
+          img='/mountain_fullsize.webp'
+          description='
+            Mobile apps are playing an increasingly integral part in delivering
+            users the best experience. We develop high performance mobile apps
+            that deliver an unmatched experience for users around the world.
+            <br />
+            <br />
+            Take your users digital experience to a new level with an app that
+            will wow them.'
+          btnText='Conheça'
+        />
+      </Session>
+
+      <Session>
+        <Hero
+          title='Campanhas institucionais'
+          img='/skyline_fullsize.webp'
+          description='
+            Mobile apps are playing an increasingly integral part in delivering
+            users the best experience. We develop high performance mobile apps
+            that deliver an unmatched experience for users around the world.
+            <br />
+            <br />
+            Take your users digital experience to a new level with an app that
+            will wow them.'
+          btnText='Conheça'
+          className='reverse' 
+        />
       </Session>
  
       <Session>
         <Form />
       </Session>
+      <Session>
+        <Loop />
+      </Session> */}
 
     </main>
   );
