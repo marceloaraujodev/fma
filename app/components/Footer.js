@@ -42,8 +42,10 @@ export default function Footer() {
   return (
     <>
     <footer className={c.footer}>
+    <div className={c.wrapper}>
+    <div className={c.skewed}></div>
       <div className={c.container}>
-        <div className={c.title}>
+        <div className={c.logoImg}>
           <Image
             src="/logo2.png"
             width={300} 
@@ -218,6 +220,9 @@ export default function Footer() {
               </div>
         </div>
       </div>
+
+
+    </div>
     </footer>
           {/* <ToastContainer
           hideProgressBar={true}

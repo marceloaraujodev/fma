@@ -2,23 +2,30 @@
 
 .footer{
   width: 100%;
-  background-color: black;
-  padding: 30px 0;
   display: flex;
   justify-content: center;
-  border-top: 1px solid gray;
+  /* border-top: 1px solid gray; */
+}
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
 }
 .container{
+  z-index: 5;
   max-width: 1400px;
   width: 100%;
 }
-.title{
+.logoImg{
   text-align: center;
+  margin-bottom: 20px;
 }
 .row{
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 50px 20px;
 }
 .footer a{
   color: white;
@@ -90,7 +97,7 @@
   border: 1px solid white;
   outline: none;
   padding: 4px;
-  background-color: black;
+  background: transparent;
   color: white;
   padding: 15px 10px;
 }
@@ -111,6 +118,20 @@
 .form .btn:hover{
   color: rgb(255, 89, 0);
   border: 1px solid white;
+}
+
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  transform: skewY(-23deg);
+  transform-origin: top right;
 }
 @media screen and (max-width: 768px){
   .row{
