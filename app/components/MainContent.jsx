@@ -34,14 +34,16 @@ export default function MainContent() {
         <Hero
           title='Campanhas institucionais'
           img='/skyline_fullsize.webp'
-          description='
+          description={
+          <>
             Mobile apps are playing an increasingly integral part in delivering
             users the best experience. We develop high performance mobile apps
             that deliver an unmatched experience for users around the world.
             <br />
             <br />
             Take your users digital experience to a new level with an app that
-            will wow them.'
+            will wow them.
+            </>}
           btnText='Conheça'
           className='reverse' 
         />
