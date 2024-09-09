@@ -45,6 +45,7 @@ export default function Footer() {
     <div className={c.wrapper}>
     <div className={c.skewed}></div>
       <div className={c.container}>
+
         <div className={c.logoImg}>
           <Image
             src="/logo2.png"
@@ -56,7 +57,6 @@ export default function Footer() {
             className={c.img}
           />
         </div>
-
         <div className={c.row}>
           <div className={c.leftBox}>
             <h2>Menu</h2>
