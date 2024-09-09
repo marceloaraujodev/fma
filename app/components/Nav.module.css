@@ -54,6 +54,7 @@
   border: 2px solid white;
 }
 .liItem:hover{
+  padding: 5px 0;
   border: 2px solid rgb(136, 0, 255);
   cursor: pointer;
   /* border-radius: 2px; */
