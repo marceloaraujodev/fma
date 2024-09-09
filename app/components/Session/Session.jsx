@@ -3,8 +3,8 @@ import c from './Session.module.css';
 
 export default function Session({children}) {
   return (
-    <session className={c.session}>
+    <div className={c.session}>
       {children}
-    </session>
+    </div>
   )
 }

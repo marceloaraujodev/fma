@@ -46,3 +46,10 @@
   cursor: pointer;
   font-weight: 600;
 }
+
+@media screen and (max-width: 600px){
+  .form{
+    max-width: 350px;
+  }
+
+}

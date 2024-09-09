@@ -10,6 +10,7 @@ export default function ClientLoop() {
         width={100}
         height={50}
         className={c.img}
+        alt="Carmen Steffens logo"
       />
     </div>
     </div>

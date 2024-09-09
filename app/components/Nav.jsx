@@ -17,9 +17,6 @@ export default function Nav() {
 
   }
 
-  
-
-
   return (
     <header className={c.nav}>
       <nav className={c.navMenu}>
@@ -28,8 +25,9 @@ export default function Nav() {
            src="/logo2.png"
             width={300} 
             height={100}
-            style={{width: 'auto', height:'200'}}
+            style={{ width: 'auto', height: '100px' }}
             className={c.logoImg}
+            alt='logo'
           />
         </div>
         <div className={c.navLinks}>

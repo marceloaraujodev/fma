@@ -50,10 +50,13 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px){
+@media screen and (max-width: 900px){
   .container{
     flex-direction: column;
     align-items: center;
+  }
+  .container.reverse{
+    flex-direction: column;
   }
   .blockLeft{
     width: 100%;
@@ -61,5 +64,15 @@
   }
   .blockRight{
     width: 100%;
+  }
+
+}
+@media screen and (max-width: 376px){
+  .container.reverse{
+    flex-direction: column;
+  }
+  .blockRight{
+    width: 100%;
+    object-fit: cover;
   }
 }

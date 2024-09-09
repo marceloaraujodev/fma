@@ -5,6 +5,10 @@
   flex-shrink: 0;
   min-height: 67px;
   border-bottom: 1px solid gray;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
 }
 .navMenu{
   display: flex;
@@ -26,7 +30,7 @@
 }
 .logoImg{
   /* border-radius: 50%; */
-  height: 100px;
+  /* height: 100px; */
   margin: 5px 0;
 }
 .navLinks{

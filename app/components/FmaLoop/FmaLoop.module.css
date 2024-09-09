@@ -6,12 +6,13 @@
 }
 .titleContainer{
   position: relative;
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: 900;
   letter-spacing: -3.2px;
-  margin: 1rem 0;
   display: flex;
   justify-content: center;
+  align-items: start;
+  /* border: 1px solid ; */
 }
 /* text transparent passes the background color, background clip, cuts to the text */
 .colorEffect{
@@ -67,7 +68,7 @@
   76.66%, 96.66% { color: transparent; }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
   .loopEffectContainer{
     display: block;
     width: 100%;
@@ -75,8 +76,6 @@
   .titleContainer{
     font-size: 13vw;
     letter-spacing: -1.2px;
-    margin: 0 0;
-    line-height: 74px;
   }
 
 }
