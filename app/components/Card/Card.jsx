@@ -22,7 +22,7 @@ export default function Card({name, role, description, img, href}) {
             initial={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.3, delay: 0.1 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
-          >
+           >
             <div className={c.photo}>
               <Image
                 src={img}
