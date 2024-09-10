@@ -1,5 +1,8 @@
 import localFont from "next/font/local";
 import { Inter, Outfit, Roboto, Work_Sans } from "next/font/google"; 
+import Nav from "./components/Nav";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -36,7 +39,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className} ${workSans.className} antialiased`}
       >
-        {children}
+        <Nav />
+        <main className='content'>
+        <MainContent>
+          {children}
+        </MainContent>
+        </main>
+        <Footer />
       </body>
     </html>
   );

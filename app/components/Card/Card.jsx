@@ -1,18 +1,18 @@
 'use client';
 import { useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link'
 // import PageContent from '../components/PageContent';
 import Image from 'next/image';
 // import Title from '../components/Title';
 import c from './Card.module.css';
 
-export default function Card({name, role, description, img}) {
+export default function Card({name, role, description, img, href}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <>
-      {/* <PageContent> */}
 
       <div className={c.row}>
         <div className={c.containerInner}>
@@ -36,12 +36,12 @@ export default function Card({name, role, description, img}) {
             <div className={c.profession}>{role}</div>
             <div className={c.descriptionContainer}>
               <p className={c.description}>{description}</p>
-              <span className={c.more}>Tudo Sobre</span>
+              <Link href={href}><span className={c.more}>Tudo Sobre</span></Link>
             </div>
           </motion.section>
         </div>
       </div>
-      {/* </PageContent> */}
+
     </>
   );
 }

@@ -1,41 +1,39 @@
-.container{
-  width: 100%;
+.container {
+  width: 100vw;
   overflow: hidden;
 }
-.loop{
-  color: white;
-  width: 100%;
-  animation: infiniteLoop 34s infinite linear;
-  display: flex;
-  gap: 150px;
-  justify-content: center;
+
+.loop {
+  display: inline-flex;
+  align-items: center;
+  gap: 100px;
+  animation: infiniteLoop 30s linear infinite;
 }
 .clients{
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-bottom: 50px;
+  letter-spacing: 1px;
 }
-.x{
+.imgCont {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-right: 20px; */
+  flex-shrink: 0;
 }
-.img{
-  opacity: .9;
-  width: 100%;
+
+.img {
+  opacity: 0.9;
+  width: auto;
   height: 80px;
 }
+
 @keyframes infiniteLoop {
   0% {
-    /* transform: translateX(0%); */
-    transform: translateX(100%);
+    transform: translateX(0);
   }
-  /* 50%{
-    transform: translateX(50%);
-  } */
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-33.33%);
   }
 }

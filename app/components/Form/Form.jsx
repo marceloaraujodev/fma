@@ -56,7 +56,7 @@ export default function Form() {
           />
         </session>
       </div>
-      <div>
+      <div className={c.select}>
         <p>Selecione um ou mais serviços</p>
         <div className={c.checkboxes}>
           <input

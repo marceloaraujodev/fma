@@ -19,7 +19,9 @@ body{
   font-family: 'outfit';
   /* border: 1px solid red; */
 }
-
+.content{
+  padding-top: 110px;
+}
 .footer{
   flex-shrink: 0;
   padding: 10px;

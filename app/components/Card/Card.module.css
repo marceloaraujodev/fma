@@ -50,13 +50,16 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 .more{
   background-color: transparent;
   border: 1px solid white;
   padding: 10px 25px;
   cursor: pointer;
+}
+.descriptionContainer a{
+  text-decoration: none;
+  color: white;
 }
 /* @media screen and (max-width: 375px) {
   .container{

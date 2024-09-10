@@ -3,9 +3,9 @@
   /* justify-content: center; */
   flex-direction: column;
   background-color: rgb(34, 34, 34);
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 3.5rem;
   border-radius: 15px;
-  max-width: 450px;
+  max-width: 650px;
 }
 .form h1{
   font-size: 2.3rem;
@@ -28,6 +28,9 @@
   border-radius: 3px;
   color: white;
   font-weight: 500;
+}
+.select{
+  margin-top: 15px;
 }
 .form button{
   border: none;
