@@ -1,11 +1,13 @@
+'use client'
 import Form from './components/Form/Form';
 import Session from './components/Session/Session';
 import Hero from './components/Hero/Hero';
 import Loop from './components/ClientLoop/ClientLoop';
 import FmaLoop from './components/FmaLoop/FmaLoop';
-import Card from './components/Card/Card';
+import Cards from './Cards/Cards';
 
 export default function Home() {
+
   return (
     <>
       <Session>
@@ -37,7 +39,9 @@ export default function Home() {
               atendimento
             </>
           }
-          btnText="Conheça"
+          btnText="Contato"
+          btnClick='#form'
+
         />
       </Session>
       <Session>
@@ -59,7 +63,8 @@ export default function Home() {
               consultoria é completa e abrangente neste segmento.
             </>
           }
-          btnText="Conheça"
+          btnText="Contato"
+          btnClick='#form'
         />
       </Session>
 
@@ -86,8 +91,9 @@ export default function Home() {
               que o mercado de luxo exige.
             </>
           }
-          btnText="Conheça"
+          btnText="Contato"
           className="reverse"
+          btnClick='#form'
         />
       </Session>
 
@@ -115,7 +121,8 @@ export default function Home() {
               diversas plataformas são nossa especialidade.
             </>
           }
-          btnText="Conheça"
+          btnText="Contato"
+          btnClick='#form'
         />
       </Session>
 
@@ -144,35 +151,19 @@ export default function Home() {
               clientes.
             </>
           }
-          btnText="Conheça"
+          btnText="Contato"
+          btnClick='#form'
         />
       </Session>
 
-      <Session>
+  
         <Form />
-      </Session>
+
       <Session>
         <Loop />
       </Session>
       <Session>
-        <Card
-          img="/gabriel.jpg"
-          name="Gabriel Spaniol"
-          role="CEO"
-          href="/members/gabriel"
-          description="Desde 2006 trabalhando com E-commerce e liderando as operações
-              da Carmen Steffens, um dos maiores sites de moda do país,
-              Gabriel Spaniol já foi também consultor e sócio do Grupo Bruce Clay Brasil"
-        />
-        <Card
-          img="/daniel.jpg"
-          name="Daniel Burman"
-          role="CEO"
-          href="/members/daniel"
-          description="Daniel Burman é um renomado diretor de arte, fotógrafo e filmmaker brasileiro, 
-              conhecido por seu trabalho impactante nas áreas de moda e publicidade. Durante sete anos, 
-              foi diretor de arte da L'Officiel "
-        />
+          <Cards />
       </Session>
     </>
   );

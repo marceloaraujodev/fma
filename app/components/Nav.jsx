@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useState } from 'react';
 import { firstobileAlt } from 'react-icons/fa';
 import { GiWorld } from 'react-icons/gi';
@@ -13,20 +13,20 @@ export default function Nav() {
   const [showMenu, setShowMenu] = useState(false);
 
   function handleClick() {
-    setShowMenu(!showMenu)
+    setShowMenu(!showMenu);
   }
 
   return (
     <header className={c.nav}>
       <nav className={c.navMenu}>
         <div className={c.logo}>
-          <Image 
-           src="/logo2.png"
-            width={300} 
+          <Image
+            src="/logo2.png"
+            width={300}
             height={100}
             style={{ width: 'auto', height: '100px' }}
             className={c.logoImg}
-            alt='logo'
+            alt="logo"
           />
         </div>
         <div className={c.navLinks}>
@@ -88,30 +88,35 @@ export default function Nav() {
 
         <div className={c.smallMenu} onClick={handleClick}>
           <RxHamburgerMenu />
-          <div className={`${showMenu ? c.smallMenuDropDown : `${c.smallMenuDropDown} ${c.hide}`}`}>
+          <div
+            className={`${
+              showMenu
+                ? c.smallMenuDropDown
+                : `${c.smallMenuDropDown} ${c.hide}`
+            }`}
+          >
             <ul>
-              <li >
-                  <p onClick={() => console.log('web')}>Web</p>
+              <li>
+                <p onClick={() => console.log('web')}>Web</p>
               </li>
 
-              <li >
-                  <p >Campanhas</p>
+              <li>
+                <p>Campanhas</p>
               </li>
-              <li >
-                  <p >Consultoria</p>
+              <li>
+                <p>Consultoria</p>
               </li>
-              <li >
-                  <p >SEO</p>
+              <li>
+                <p>SEO</p>
               </li>
-
             </ul>
           </div>
         </div>
       </nav>
       <div className={c.btnCont}>
-      <a className={c.btn} href="#form">
-        Contato
-      </a>
+        <a className={c.btn} href="#form">
+          Contato
+        </a>
       </div>
     </header>
   );

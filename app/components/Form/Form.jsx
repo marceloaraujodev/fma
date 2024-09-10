@@ -10,6 +10,7 @@ export default function Form() {
   const [campanhas, setCampanhas] = useState(false);
   const [consultoria, setConsultoria] = useState(false);
   const [seo, setSeo] = useState(false);
+  
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -29,8 +30,9 @@ export default function Form() {
   }
 
   return (
-    <form className={c.form} onSubmit={handleSubmit} id='form'>
-      <div className={c.container}>
+    <div className={c.container} id='form' data-offset='110'>
+    <form className={c.form} onSubmit={handleSubmit} >
+      <div >
         <h1>Consulte seu projeto</h1>
         <p>Agende sua consulta e saiba como podemos ajudar</p>
 
@@ -107,5 +109,7 @@ export default function Form() {
       </div>
       <button type="submit">Submit</button>
     </form>
+
+    </div>
   );
 }

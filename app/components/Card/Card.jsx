@@ -7,7 +7,7 @@ import Image from 'next/image';
 // import Title from '../components/Title';
 import c from './Card.module.css';
 
-export default function Card({name, role, description, img, href}) {
+export default function Card({name, role, description, img, href, delay}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -20,7 +20,7 @@ export default function Card({name, role, description, img, href}) {
             ref={ref}
             className={c.contentContainer}
             initial={{ opacity: 0, y: 200 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
+            transition={{ duration: 0.3, delay: delay }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
            >
             <div className={c.photo}>

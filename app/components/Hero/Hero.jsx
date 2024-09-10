@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import c from './Hero.module.css';
-export default function Hero({title, className, img, description, btnText}) {
+export default function Hero({title, className, img, description, btnText, btnClick}) {
     // Dynamically combine the container class with the reverse class (if provided)
     const containerClass = `${c.container} ${className === 'reverse' ? c.reverse : ''}`;
   
@@ -23,7 +23,9 @@ export default function Hero({title, className, img, description, btnText}) {
             <p className={c.new}>{title}</p>
             {description}
           </div>
-          <button className={c.btn}>{btnText}</button>
+            <a href={btnClick}>
+            <button className={c.btn}>{btnText}</button>
+            </a>
         </div>
       </div>
     </div>
