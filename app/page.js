@@ -110,7 +110,7 @@ export default function Home() {
               <br />
               <br />
               VTEX, Oracle Commerce Cloud, Sales Force, bem como plataformas de
-              baixo custo que sugerimos para iniciantes neste universo. API's,
+              baixo custo que sugerimos para iniciantes neste universo. API&apos;s,
               Integrações, consultoria, configurações avançadas de websites em
               diversas plataformas são nossa especialidade.
             </>
