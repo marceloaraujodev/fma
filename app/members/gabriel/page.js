@@ -34,7 +34,7 @@ export default function page() {
           </p>
 
           <p>
-            Nesta nova etapa, a MG Consulting está atuando no desenvolvimento de
+            Nesta nova etapa, a FMA Consulting está atuando no desenvolvimento de
             novas lojas virtuais, bem como suporte e evolução de lojas
             existentes. Além disso, oferece um pacote completo que também inclui
             tráfego pago no Google, Facebook, Instagram, TikTok, utilizando das

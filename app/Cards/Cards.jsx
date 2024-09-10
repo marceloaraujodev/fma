@@ -1,7 +1,7 @@
 import Card from '../components/Card/Card';
 import c from './Cards.module.css'
 
-export default function () {
+export default function Cards() {
   return (
     <div className={c.container}>
       <Card
