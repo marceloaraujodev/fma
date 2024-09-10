@@ -21,23 +21,20 @@ export default function Home() {
               Somos a primeira agência do mercado que atua em três importantes
               frentes do mercado digital, oferecendo um pacote de serviços
               completo que gera valor e segurança para nossos clientes.
-              
               <br />
               <br />
-              Nossos serviços iniciam no desenvolvimento de E-commerce, adentram o
-              universo das Campanhas publicitárias, design de criativos para
+              Nossos serviços iniciam no desenvolvimento de E-commerce, adentram
+              o universo das Campanhas publicitárias, design de criativos para
               Tráfego Pago, bem como toda gestão financeira e de campanhas da
               Meta, Google, Linkedin, Tik Tok, em um trabalho desenvolvido por
               especialistas que já investiram milhões na internet e irão gastas
               verbas com muita responsabilidade, assegurando excelente ROI.
-
               <br />
               <br />
               Somos uma agência Boutique e não atendemos grande volume de
               clientes, por isso possuímos somente profissionais de alto nível
               em cada área, de forma a garantir qualidade excepcional de
               atendimento
-
             </>
           }
           btnText="Conheça"
