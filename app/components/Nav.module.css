@@ -47,6 +47,7 @@
 }
 .dropDown ul{
   list-style: none;
+  /* border: 2px solid white; */
 }
 .liItem{
   display: flex;
@@ -54,10 +55,8 @@
   border: 2px solid white;
 }
 .liItem:hover{
-  padding: 5px 0;
   border: 2px solid rgb(136, 0, 255);
   cursor: pointer;
-  /* border-radius: 2px; */
 }
 .icon{
   font-size: 1.5rem;

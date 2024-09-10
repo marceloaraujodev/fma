@@ -14,6 +14,37 @@ export default function Home() {
 
       <Session>
         <Hero
+          title="Conheça Nossa Agência"
+          img="/dburman.jpg"
+          description={
+            <>
+              Somos a primeira agência do mercado que atua em três importantes
+              frentes do mercado digital, oferecendo um pacote de serviços
+              completo que gera valor e segurança para nossos clientes.
+              
+              <br />
+              <br />
+              Nossos serviços iniciam no desenvolvimento de E-commerce, adentram o
+              universo das Campanhas publicitárias, design de criativos para
+              Tráfego Pago, bem como toda gestão financeira e de campanhas da
+              Meta, Google, Linkedin, Tik Tok, em um trabalho desenvolvido por
+              especialistas que já investiram milhões na internet e irão gastas
+              verbas com muita responsabilidade, assegurando excelente ROI.
+
+              <br />
+              <br />
+              Somos uma agência Boutique e não atendemos grande volume de
+              clientes, por isso possuímos somente profissionais de alto nível
+              em cada área, de forma a garantir qualidade excepcional de
+              atendimento
+
+            </>
+          }
+          btnText="Conheça"
+        />
+      </Session>
+      <Session>
+        <Hero
           title="SEO Search Engine Optimization"
           img="/mountain_fullsize.webp"
           description={
@@ -38,7 +69,7 @@ export default function Home() {
       <Session>
         <Hero
           title="Campanhas institucionais"
-          img="/skyline_fullsize.webp"
+          img="/dburman3.jpg"
           description={
             <>
               A Fashion Marketing Agency, possui especialistas na criação de
@@ -94,7 +125,7 @@ export default function Home() {
       <Session>
         <Hero
           title="Tráfego Pago"
-          img="/skyline_fullsize.webp"
+          img="/growth2.jpg"
           className="reverse"
           description={
             <>
@@ -105,16 +136,15 @@ export default function Home() {
               Nosso time já investiu mais de 50 milhões de reais em tráfego e
               sabe otimizar campanhas assegurando excelente ROI, resultados
               jamais vistos no mercado antes principalmente no caso do
-              E-commerce de moda. 
-              
+              E-commerce de moda.
               <br />
               <br />
-              Gabriel Spaniol fundou o E-commerce da Carmen
-              Steffens em 2006, e sempre esteve a frente do tráfego de um dos
-              maiores sites de moda do país. Nosso atendimento boutique, é
-              sugerido para poucos clientes de grande porte, e possui foco total
-              em resultados, com profissionais senior com altíssima experiência
-              atendendo todos os clientes.
+              Gabriel Spaniol fundou o E-commerce da Carmen Steffens em 2006, e
+              sempre esteve a frente do tráfego de um dos maiores sites de moda
+              do país. Nosso atendimento boutique, é sugerido para poucos
+              clientes de grande porte, e possui foco total em resultados, com
+              profissionais senior com altíssima experiência atendendo todos os
+              clientes.
             </>
           }
           btnText="Conheça"

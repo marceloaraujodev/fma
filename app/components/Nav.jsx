@@ -14,7 +14,6 @@ export default function Nav() {
 
   function handleClick() {
     setShowMenu(!showMenu)
-
   }
 
   return (
