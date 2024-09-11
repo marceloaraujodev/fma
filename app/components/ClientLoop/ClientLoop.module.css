@@ -20,6 +20,12 @@
   /* border: 1px solid blue; */
   object-fit: cover;
 }
+.clients{
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 .img{
   /* border: 1px solid green; */
   height: 50px;
