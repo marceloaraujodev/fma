@@ -28,7 +28,7 @@ export default function page() {
 
           <p>
             Atuando como consultor, Gabriel Spaniol já atuou em empresas como
-            Globo.com, B2W, Americanas, Submarino, Shoptimr, Carrefour, além de
+            Globo.com, B2W, Americanas, Submarino, Shoptime, Carrefour, além de
             ter publicado em sua trajetória profissional mais de 50 lojas
             virtuais utilizando as mais variadas plataformas.
           </p>
