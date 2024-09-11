@@ -5,12 +5,14 @@ import Hero from './components/Hero/Hero';
 import Loop from './components/ClientLoop/ClientLoop';
 import FmaLoop from './components/FmaLoop/FmaLoop';
 import Cards from './Cards/Cards';
+import Spinner from './components/Spinner/Spinner';
+
 
 export default function Home() {
 
   return (
     <>
-    
+
       <Session>
         <FmaLoop />
       </Session>

@@ -6,8 +6,9 @@ import c from './Footer.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-// import notify from '../utils/notifications';
-// import { ToastContainer} from 'react-toastify';
+import { IoLocationOutline } from "react-icons/io5";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -32,7 +33,23 @@ export default function Footer() {
     }
   }
 
-  async function handleSubmitNewsletter(e) {}
+  const notify = (message) => toast(message);
+
+  async function handleSubmitNewsletter(e) {
+    e.preventDefault();
+    console.log(email)
+    notify('Success', 'You have successfully subscribed to our newsletter');
+    // try {
+    //   // const response = await axios.post('/api/newsletter', { email });
+    //   // console.log(response.data);
+    //   notify('Success', 'You have successfully subscribed to our newsletter');
+    //   // setEmail('');
+    // } catch (error) {
+    //   console.error(error);
+    //   notify('Error', 'Failed to subscribe to our newsletter');
+    // }
+  }
+  
 
   return (
     <>
@@ -190,7 +207,7 @@ export default function Footer() {
                 </div>
                 <div
                   onClick={(e) => handleClick('instagram')}
-                  title="copy to clipboard"
+                  title="cinstagram"
                 >
                   <i className={`bi bi-instagram ${c.icons}`}>
                     {' '}
@@ -200,7 +217,7 @@ export default function Footer() {
 
                 <div
                   onClick={(e) => handleClick('linkedin')}
-                  title="copy to clipboard"
+                  title="linkedin"
                 >
                   <i className={`bi bi-linkedin ${c.icons}`}>
                     {' '}
@@ -210,9 +227,9 @@ export default function Footer() {
 
                 <div
                   onClick={(e) => handleClick('message')}
-                  title="copy to clipboard"
+                  title="message us"
                   className={c.icons}
-                >
+                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -226,10 +243,20 @@ export default function Footer() {
                   </svg>
                   <span>message us</span>
                 </div>
+                <div
+                  onClick={(e) => handleClick('address')}
+                  title="endereço"
+                  className={c.icons}
+                 >
+                  <IoLocationOutline />
+                  <span className={c.address}>Av. Brigadeiro Faria Lima, 1903 
+                  - Sexto Andar</span>
+                </div>
+                
               </div>
               <div className={c.formContainer}>
                 <h2 className={c.newsLetter}>Newsletter</h2>
-                <form className={c.form} onSubmit={handleSubmitNewsletter}>
+                <form className={c.form} onSubmit={(e) => handleSubmitNewsletter(e)}>
                   <input
                     type="email"
                     placeholder="Email address"
@@ -239,7 +266,7 @@ export default function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <button className={c.btn} type="submit">
-                    Subscribe
+                    Inscreva-se
                   </button>
                 </form>
               </div>
