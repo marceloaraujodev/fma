@@ -120,14 +120,22 @@ export default function Nav() {
                 : `${c.smallMenuDropDown} ${c.hide}`
             }`}
           >
-            <ul>
-              <li
-                className={c.smallMenuLi}
-                onClick={() => scrollToSection('#ag')}
-              >
-                Conheça nossa Agência
+            <ul >
+              <li className={c.smallMenuLi}>
+                <a href="#agencia">Conheça nossa Agência</a>
               </li>
-              <li className={c.smallMenuLi}>SEO</li>
+              <li className={c.smallMenuLi}>
+                <a href="#seo">SEO</a>
+              </li>
+              <li className={c.smallMenuLi}>
+                <a href="#campanhas">Campanhas</a>
+              </li>
+              <li className={c.smallMenuLi}>
+                <a href="#web">Web</a>
+              </li>
+              <li className={c.smallMenuLi}>
+                <a href="#traffic">Tráfego Pago</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function Home() {
       <Session id='seo'>
         <Hero
           title="SEO Search Engine Optimization"
-          img="/SEO.jpg"
+          img="/seo.jpg"
           description={
             <>
               Tendo como parceiro internacional o grupo Bruce Clay Inc, da
