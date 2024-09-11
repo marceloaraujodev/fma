@@ -6,6 +6,24 @@
   overflow: hidden;
   /* border: 1px solid red; */
 }
+.container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/background-5.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; 
+  z-index: -1; /* Keep it behind the content */
+  filter: grayscale(100%);
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%,  rgba(0, 0, 0, 0) 100%),
+  url('/background-5.png');
+}
 .container.reverse{
   flex-direction: row-reverse;
 }
@@ -29,6 +47,8 @@
   height: auto;
   overflow: visible;
   padding: 30px;
+
+
 }
 .new{
   font-size: 2rem;

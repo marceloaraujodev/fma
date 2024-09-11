@@ -10,6 +10,7 @@ export default function Hero({title, className, img, description, btnText, btnCl
   
   return (
     <div className={containerClass}>
+
       <motion.div 
         className={c.blockLeft}
         ref={ref}

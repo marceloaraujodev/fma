@@ -6,13 +6,15 @@ import Loop from './components/ClientLoop/ClientLoop';
 import FmaLoop from './components/FmaLoop/FmaLoop';
 import Cards from './Cards/Cards';
 import Spinner from './components/Spinner/Spinner';
+import c from './homepage.module.css'
 
 
 export default function Home() {
 
   return (
     <>
-
+  
+ 
       <Session>
         <FmaLoop />
       </Session>
