@@ -7,8 +7,9 @@
   border-bottom: 1px solid gray;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
   background-color: black;
+  max-height: 110px;
 }
 .nav a{
   text-decoration: none;
@@ -33,11 +34,9 @@
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-
+  cursor: pointer;
 }
 .logoImg{
-  /* border-radius: 50%; */
-  /* height: 100px; */
   margin: 5px 0;
 }
 .navLinks{

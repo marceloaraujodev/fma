@@ -58,8 +58,9 @@ export default function Footer() {
             <div className={c.logoImg}>
               <Image
                 src="/logo2.png"
-                width={300}
-                height={100}
+                width={0}
+                height={0}
+                sizes='100vw'
                 style={{ width: 'auto', height: '80px' }}
                 alt="logo"
                 priority={true}

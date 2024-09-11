@@ -21,14 +21,18 @@ export default function Nav() {
     <header className={c.nav}>
       <nav className={c.navMenu}>
         <div className={c.logo}>
+          <a href='/'>
           <Image
             src="/logo2.png"
-            width={300}
-            height={100}
+            width={0}
+            height={0}
+            sizes='100vw'
             style={{ width: 'auto', height: '100px' }}
             className={c.logoImg}
             alt="logo"
+            priority
           />
+          </a>
         </div>
         <div className={c.navLinks}>
           <div className={c.service}>Serviços</div>
@@ -107,9 +111,9 @@ export default function Nav() {
             </ul>
           </div>
         </div>
-        <div className={c.navLinks}>
+        {/* <div className={c.navLinks}>
           <span>Empresa</span>
-        </div>
+        </div> */}
 
         <div className={c.smallMenu} onClick={handleClick}>
           <RxHamburgerMenu />

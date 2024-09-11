@@ -4,11 +4,11 @@ import { useRef } from 'react';
 import { motion, useInView} from 'framer-motion';
 import axios from 'axios';
 import c from './Form.module.css';
-import { FaScaleBalanced } from 'react-icons/fa6';
+
 
 export default function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState('Marcelo Araujo');
+  const [email, setEmail] = useState('test@example.us');
   const [web, setWeb] = useState(false);
   const [campanhas, setCampanhas] = useState(false);
   const [consultoria, setConsultoria] = useState(false);
@@ -30,8 +30,8 @@ export default function Form() {
       consultoria,
       seo,
     }
-
-    const res = await axios.post('/api/contact', userContactForm)
+    console.log(userContactForm)
+    // const res = await axios.post('/api/contact', userContactForm)
     // console.log(userContactForm)
   }
 
@@ -58,6 +58,7 @@ export default function Form() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            
           />
 
           <label htmlFor="email">Email</label>
