@@ -3,6 +3,7 @@ import { Inter, Outfit, Roboto, Work_Sans } from "next/font/google";
 import Nav from "./components/Nav";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
+import { ToastContainer, toast } from 'react-toastify';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
         </MainContent>
         </main>
         <Footer />
+        <ToastContainer className='toast' />
       </body>
     </html>
   );

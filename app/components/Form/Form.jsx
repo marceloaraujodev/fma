@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { useRef } from 'react';
 import { motion, useInView} from 'framer-motion';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import c from './Form.module.css';
 
@@ -17,6 +19,7 @@ export default function Form() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   
+  const notify = (message) => toast(message);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -33,6 +36,7 @@ export default function Form() {
     console.log(userContactForm)
     // const res = await axios.post('/api/contact', userContactForm)
     // console.log(userContactForm)
+    notify('Formulário enviado com sucesso!')
   }
 
   return (

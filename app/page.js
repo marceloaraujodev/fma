@@ -106,7 +106,7 @@ export default function Home() {
               E-commerce:
             </>
           }
-          img="/skyline_fullsize.webp"
+          img="/siteCarmen.jpg"
           description={
             <>
               Com uma equipe experiente de Full Stack Developers, a fashion
@@ -166,6 +166,7 @@ export default function Home() {
       <Session>
           <Cards />
       </Session>
+      
     </>
   );
 }

@@ -17,7 +17,7 @@ export default function Cards() {
       <Card
         img="/daniel.jpg"
         name="Daniel Burman"
-        role="CEO"
+        role="Diretor de Arte"
         href="/members/daniel"
         delay={0.5}
         description="Daniel Burman é um renomado diretor de arte, fotógrafo e filmmaker brasileiro, 

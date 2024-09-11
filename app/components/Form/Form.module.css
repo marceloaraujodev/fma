@@ -67,7 +67,9 @@
   color: white;
   border: 1px solid white;
 }
-
+.toast{
+  z-index: 5000;
+}
 @media screen and (max-width: 600px){
   .form{
     max-width: 350px;
