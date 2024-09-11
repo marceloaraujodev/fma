@@ -1,12 +1,22 @@
+import { useRef } from 'react';
+import { motion, useInView} from 'framer-motion';
 import Image from 'next/image';
 import c from './Hero.module.css';
 export default function Hero({title, className, img, description, btnText, btnClick}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
     // Dynamically combine the container class with the reverse class (if provided)
     const containerClass = `${c.container} ${className === 'reverse' ? c.reverse : ''}`;
   
   return (
     <div className={containerClass}>
-      <div className={c.blockLeft}>
+      <motion.div 
+        className={c.blockLeft}
+        ref={ref}
+        initial={{ opacity: 0, x: -80 }}
+        transition={{ duration: 0.5, delay: 0}}
+        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 80 }}
+       >
         <Image
           src={img}
           alt={title}
@@ -16,12 +26,26 @@ export default function Hero({title, className, img, description, btnText, btnCl
           style={{ width: '100%', height: 'auto' }}
           priority
         />
-      </div>
+      </motion.div>
       <div className={c.blockRight}>
         <div className={c.highContainer}>
           <div className={c.description}>
-            <p className={c.new}>{title}</p>
-            {description}
+            <motion.p 
+              className={c.new}
+              ref={ref}
+              initial={{ opacity: 0, y: -80 }}
+              transition={{ duration: 0.5, delay: 0.2}}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
+              >{title}</motion.p>
+
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0, x: 80 }}
+                transition={{ duration: 0.5, delay: 0.2}}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
+              >
+                {description}
+              </motion.div>
           </div>
             <a href={btnClick}>
             <button className={c.btn}>{btnText}</button>

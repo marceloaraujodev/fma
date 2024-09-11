@@ -1,7 +1,10 @@
 'use client';
 import { useState } from 'react';
+import { useRef } from 'react';
+import { motion, useInView} from 'framer-motion';
 import axios from 'axios';
 import c from './Form.module.css';
+import { FaScaleBalanced } from 'react-icons/fa6';
 
 export default function Form() {
   const [name, setName] = useState('');
@@ -10,6 +13,9 @@ export default function Form() {
   const [campanhas, setCampanhas] = useState(false);
   const [consultoria, setConsultoria] = useState(false);
   const [seo, setSeo] = useState(false);
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   
 
   async function handleSubmit(e) {
@@ -30,8 +36,15 @@ export default function Form() {
   }
 
   return (
-    <div className={c.container} id='form' data-offset='110'>
-    <form className={c.form} onSubmit={handleSubmit} >
+    <div className={c.container} id='form'>
+    <motion.form 
+      className={c.form} 
+      onSubmit={handleSubmit} 
+        ref={ref}
+        initial={{ opacity: 0, scale: 0.1 }}
+        transition={{ duration: 0.5, delay: 0}}
+        animate={isInView ? { opacity: 1, scale: 1} : { opacity: 0, }}
+    >
       <div >
         <h1>Consulte seu projeto</h1>
         <p>Agende sua consulta e saiba como podemos ajudar</p>
@@ -108,7 +121,7 @@ export default function Form() {
         </div>
       </div>
       <button type="submit">Enviar</button>
-    </form>
+    </motion.form>
 
     </div>
   );

@@ -4,6 +4,7 @@
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .container.reverse{
   flex-direction: row-reverse;
