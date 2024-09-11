@@ -21,7 +21,7 @@
 }
 .logoImg{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 15px 0;
 }
 .img{
@@ -136,7 +136,7 @@
   height: 100%;
   background: #181818;
   z-index: -1;
-  transform: skewY(-15deg);
+  transform: skewY(-8deg);
   transform-origin: top right;
 }
 @media screen and (max-width: 768px){
