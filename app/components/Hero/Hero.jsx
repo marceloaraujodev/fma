@@ -4,7 +4,7 @@ import Image from 'next/image';
 import c from './Hero.module.css';
 export default function Hero({title, className, img, description, btnText, btnClick}) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: '-30px 0px' });
     // Dynamically combine the container class with the reverse class (if provided)
     const containerClass = `${c.container} ${className === 'reverse' ? c.reverse : ''}`;
   

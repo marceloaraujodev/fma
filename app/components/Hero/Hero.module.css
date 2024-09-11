@@ -1,10 +1,10 @@
 .container{
-  /* border: 1px red solid; */
   width: 100%;
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 .container.reverse{
   flex-direction: row-reverse;
