@@ -1,39 +1,37 @@
 .container {
   width: 100vw;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .loop {
   display: inline-flex;
   align-items: center;
-  gap: 100px;
-  animation: infiniteLoop 30s linear infinite;
+  animation: scroll 55s linear infinite;
 }
-.clients{
-  font-weight: 600;
-  font-size: 2.5rem;
-  text-align: center;
-  padding-bottom: 50px;
-  letter-spacing: 1px;
-}
-.imgCont {
+/* the image container should include the gap so it will prevent bumps */
+.imgCont{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  width: 250px;
+  height: 100px;
+  /* border: 1px solid blue; */
+  object-fit: cover;
 }
-
-.img {
-  opacity: 0.9;
-  width: auto;
-  height: 80px;
+.img{
+  /* border: 1px solid green; */
+  height: 50px;
+  object-fit: cover;
 }
-
-@keyframes infiniteLoop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.33%);
+/* calculate the size of each image * by the number of images here will be -2400px which is exact double of the images */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 8))}
+}
+@media screen and (max-width: 768px) {
+  .loop{
+    animation: scroll 65s linear infinite;
   }
 }

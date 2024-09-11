@@ -10,7 +10,7 @@ export default function ClientLoop() {
   ];
 
   // Create an array with three sets of images
-  const tripleImages = [...images, ...images, ...images];
+  const tripleImages = [...images, ...images, ...images, ...images];
 
   return (
     <div className={c.container}>

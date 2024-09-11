@@ -1,11 +1,12 @@
 'use client';
 import { useState } from 'react';
-import { firstobileAlt } from 'react-icons/fa';
 import { GiWorld } from 'react-icons/gi';
 import { FaSearchDollar } from 'react-icons/fa';
 import { FaPeopleGroup } from 'react-icons/fa6';
 import { GiAmpleDress } from 'react-icons/gi';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoBusiness } from 'react-icons/io5';
+import { IoStatsChartSharp } from 'react-icons/io5';
 import Image from 'next/image';
 
 import c from './Nav.module.css';
@@ -33,52 +34,76 @@ export default function Nav() {
           <div className={c.service}>Serviços</div>
           <div className={c.dropDown}>
             <ul>
-              <li className={c.liItem}>
-                <div className={c.icon}>
-                  <GiWorld />
-                </div>
-                <div className={c.descriptionCont}>
-                  <p className={c.title}>Web</p>
-                  <p>Desenvolvimento & Manutenção </p>
-                </div>
-              </li>
+              <a href="#agencia">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <IoBusiness />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Conheça</p>
+                    <p>Desenvolvimento & Manutenção </p>
+                  </div>
+                </li>
+              </a>
 
-              <li className={c.liItem}>
-                <div className={c.icon}>
-                  <FaPeopleGroup />
-                </div>
-                <div className={c.descriptionCont}>
-                  <p className={c.title}>Consultoria</p>
-                  <p>Marketing, SEO, E-Commerce</p>
-                </div>
-              </li>
-              <li className={c.liItem}>
-                <div className={c.icon}>
-                  <FaSearchDollar />
-                </div>
-                <div className={c.descriptionCont}>
-                  <p className={c.title}>SEO</p>
-                  <p>Campanhas de tráfigo pago</p>
-                </div>
-              </li>
-              <li className={c.liItem}>
-                <div className={c.icon}>
-                  <GiAmpleDress />
-                </div>
-                <div className={c.descriptionCont}>
-                  <p className={c.title}>Campanhas Publicitárias</p>
-                  <p>Fotografia, video</p>
-                </div>
-              </li>
-              {/* <li className={c.liItem}>
-                <div className={c.icon}>
-                <FaMobileAlt />
-                </div>
-                <div className={c.descriptionCont}>
-                  <p className={c.title}>Mobile</p>
-                  <p>Applicações para iOS & Android</p>
-                </div>             
-              </li> */}
+              <a href="#seo">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <FaSearchDollar />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>SEO</p>
+                    <p>Search Engines Optimization </p>
+                  </div>
+                </li>
+              </a>
+              <a href="#campanhas">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <GiAmpleDress />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Campanhas Institucionais</p>
+                    <p>Fotografia, video</p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="#web">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <GiWorld />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Web</p>
+                    <p>Desenvolvimento & Manutenção </p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="#traffic">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <IoStatsChartSharp />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Campanhas Tráfigo pago</p>
+                    <p>Campanhas de tráfigo pago</p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="#consultoria">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                    <FaPeopleGroup />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Consultoria</p>
+                    <p>Marketing, SEO, E-Commerce</p>
+                  </div>
+                </li>
+              </a>
             </ul>
           </div>
         </div>
@@ -96,19 +121,13 @@ export default function Nav() {
             }`}
           >
             <ul>
-              <li>
-                <p onClick={() => console.log('web')}>Web</p>
+              <li
+                className={c.smallMenuLi}
+                onClick={() => scrollToSection('#ag')}
+              >
+                Conheça nossa Agência
               </li>
-
-              <li>
-                <p>Campanhas</p>
-              </li>
-              <li>
-                <p>Consultoria</p>
-              </li>
-              <li>
-                <p>SEO</p>
-              </li>
+              <li className={c.smallMenuLi}>SEO</li>
             </ul>
           </div>
         </div>

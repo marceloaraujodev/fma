@@ -14,7 +14,7 @@ export default function Home() {
         <FmaLoop />
       </Session>
 
-      <Session>
+      <Session id='agencia'>
         <Hero
           title="Conheça Nossa Agência"
           img="/dburman.jpg"
@@ -41,13 +41,13 @@ export default function Home() {
           }
           btnText="Contato"
           btnClick='#form'
-
         />
       </Session>
-      <Session>
+
+      <Session id='seo'>
         <Hero
           title="SEO Search Engine Optimization"
-          img="/mountain_fullsize.webp"
+          img="/SEO.jpg"
           description={
             <>
               Tendo como parceiro internacional o grupo Bruce Clay Inc, da
@@ -68,7 +68,7 @@ export default function Home() {
         />
       </Session>
 
-      <Session>
+      <Session id='campanhas'>
         <Hero
           title="Campanhas institucionais"
           img="/dburman3.jpg"
@@ -97,7 +97,7 @@ export default function Home() {
         />
       </Session>
 
-      <Session>
+      <Session id='web'>
         <Hero
           title={
             <>
@@ -126,7 +126,7 @@ export default function Home() {
         />
       </Session>
 
-      <Session>
+      <Session id='traffic'>
         <Hero
           title="Tráfego Pago"
           img="/growth2.jpg"
