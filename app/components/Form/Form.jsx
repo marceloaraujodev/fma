@@ -107,7 +107,7 @@ export default function Form() {
           <label htmlFor="seo">SEO</label>
         </div>
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Enviar</button>
     </form>
 
     </div>
