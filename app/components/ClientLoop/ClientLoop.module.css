@@ -34,7 +34,7 @@
 /* calculate the size of each image * by the number of images here will be -2400px which is exact double of the images */
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 8))}
+	100% { transform: translateX(calc(-250px * 17))}
 }
 @media screen and (max-width: 768px) {
   .loop{

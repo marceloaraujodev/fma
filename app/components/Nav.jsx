@@ -7,6 +7,7 @@ import { GiAmpleDress } from 'react-icons/gi';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoBusiness } from 'react-icons/io5';
 import { IoStatsChartSharp } from 'react-icons/io5';
+import { IoIosPeople } from "react-icons/io";
 import Image from 'next/image';
 
 import c from './Nav.module.css';
@@ -108,12 +109,21 @@ export default function Nav() {
                   </div>
                 </li>
               </a>
+              <a href="#influencer">
+                <li className={c.liItem}>
+                  <div className={c.icon}>
+                  <IoIosPeople />
+                  </div>
+                  <div className={c.descriptionCont}>
+                    <p className={c.title}>Influencer Marketing</p>
+                    <p>Instagram, Tiktok, Snapchat</p>
+                  </div>
+                </li>
+              </a>
             </ul>
           </div>
         </div>
-        {/* <div className={c.navLinks}>
-          <span>Empresa</span>
-        </div> */}
+
 
         <div className={c.smallMenu} onClick={handleClick}>
           <RxHamburgerMenu />
@@ -139,6 +149,12 @@ export default function Nav() {
               </li>
               <li className={c.smallMenuLi}>
                 <a href="#traffic">Tráfego Pago</a>
+              </li>
+              <li className={c.smallMenuLi}>
+                <a href="#consultoria">Consultoria</a>
+              </li>
+              <li className={c.smallMenuLi}>
+                <a href="#influencer">Influencer</a>
               </li>
             </ul>
           </div>
