@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Form from './components/Form/Form';
 import Session from './components/Session/Session';
 import Hero from './components/Hero/Hero';
@@ -6,11 +6,9 @@ import Loop from './components/ClientLoop/ClientLoop';
 import FmaLoop from './components/FmaLoop/FmaLoop';
 import Cards from './Cards/Cards';
 import Spinner from './components/Spinner/Spinner';
-import c from './homepage.module.css'
-
+import c from './homepage.module.css';
 
 export default function Home() {
-
   return (
     <>
       <Session>
@@ -18,39 +16,40 @@ export default function Home() {
       </Session>
 
       <div className={c.agencia}>
-      <Session id='agencia'>
-        <Hero
-          title="Conheça Nossa Agência"
-          img="/dburman.jpg"
-          description={
-            <>
-              Somos a primeira agência do mercado que atua em três importantes
-              frentes do mercado digital, oferecendo um pacote de serviços
-              completo que gera valor e segurança para nossos clientes.
-              <br />
-              <br />
-              Nossos serviços iniciam no desenvolvimento de E-commerce, adentram
-              o universo das Campanhas publicitárias, design de criativos para
-              Tráfego Pago, bem como toda gestão financeira e de campanhas da
-              Meta, Google, Linkedin, Tik Tok, em um trabalho desenvolvido por
-              especialistas que já investiram milhões na internet e irão gastas
-              verbas com muita responsabilidade, assegurando excelente ROI.
-              <br />
-              <br />
-              Somos uma agência Boutique e não atendemos grande volume de
-              clientes, por isso possuímos somente profissionais de alto nível
-              em cada área, de forma a garantir qualidade excepcional de
-              atendimento
-            </>
-          }
-          btnText="Contato"
-          btnClick='#form'
-        />
-      </Session>
+        <Session id="agencia">
+          <Hero
+            title="Conheça Nossa Agência"
+            img="/dburman.jpg"
+            description={
+              <>
+                Somos a primeira agência do mercado que atua em três importantes
+                frentes do mercado digital, oferecendo um pacote de serviços
+                completo que gera valor e segurança para nossos clientes.
+                <br />
+                <br />
+                Nossos serviços iniciam no desenvolvimento de E-commerce,
+                adentram o universo das Campanhas publicitárias, design de
+                criativos para Tráfego Pago, bem como toda gestão financeira e
+                de campanhas da Meta, Google, Linkedin, Tik Tok, em um trabalho
+                desenvolvido por especialistas que já investiram milhões na
+                internet e irão gastas verbas com muita responsabilidade,
+                assegurando excelente ROI.
+                <br />
+                <br />
+                Somos uma agência Boutique e não atendemos grande volume de
+                clientes, por isso possuímos somente profissionais de alto nível
+                em cada área, de forma a garantir qualidade excepcional de
+                atendimento
+              </>
+            }
+            btnText="Contato"
+            btnClick="#form"
+          />
+        </Session>
       </div>
 
       <div className={c.seo}>
-        <Session id='seo'>
+        <Session id="seo">
           <Hero
             title="SEO Search Engine Optimization"
             img="/seo.jpg"
@@ -70,13 +69,13 @@ export default function Home() {
               </>
             }
             btnText="Contato"
-            btnClick='#form'
+            btnClick="#form"
           />
         </Session>
       </div>
 
       <div className={c.campanhas}>
-        <Session id='campanhas'>
+        <Session id="campanhas">
           <Hero
             title="Campanhas institucionais"
             img="/dburman3.jpg"
@@ -94,20 +93,20 @@ export default function Home() {
                 Se você deseja criar valor de marca e um posicionamento perfeito
                 no mercado de luxo, agora encontrou com a Fashion Marketing
                 Agency, o caminho para o Suscesso. Realizamos também campanhas
-                institucionais e de produtos em todos os sementos, sempre trazendo
-                com nosso time o expertise e profissionalismo, bem como a estética
-                que o mercado de luxo exige.
+                institucionais e de produtos em todos os sementos, sempre
+                trazendo com nosso time o expertise e profissionalismo, bem como
+                a estética que o mercado de luxo exige.
               </>
             }
             btnText="Contato"
             className="reverse"
-            btnClick='#form'
+            btnClick="#form"
           />
         </Session>
       </div>
 
       <div className={c.web}>
-        <Session id='web'>
+        <Session id="web">
           <Hero
             title={
               <>
@@ -121,24 +120,24 @@ export default function Home() {
                 Com uma equipe experiente de Full Stack Developers, a fashion
                 Marketing Agency está pronta para tornar seu sonho de vender
                 produtos através da internet realidade. Atuamos com praticamente
-                todas as principais plataformas, desenvolvendo E-commerce de moda
-                e prestando serviços para quem já possui seu website.
+                todas as principais plataformas, desenvolvendo E-commerce de
+                moda e prestando serviços para quem já possui seu website.
                 <br />
                 <br />
-                VTEX, Oracle Commerce Cloud, Sales Force, bem como plataformas de
-                baixo custo que sugerimos para iniciantes neste universo. API&apos;s,
-                Integrações, consultoria, configurações avançadas de websites em
-                diversas plataformas são nossa especialidade.
+                VTEX, Oracle Commerce Cloud, Sales Force, bem como plataformas
+                de baixo custo que sugerimos para iniciantes neste universo.
+                API&apos;s, Integrações, consultoria, configurações avançadas de
+                websites em diversas plataformas são nossa especialidade.
               </>
             }
             btnText="Contato"
-            btnClick='#form'
+            btnClick="#form"
           />
         </Session>
       </div>
 
       <div className={c.traffic}>
-        <Session id='traffic'>
+        <Session id="traffic">
           <Hero
             title="Tráfego Pago"
             img="/growth2.png"
@@ -155,52 +154,57 @@ export default function Home() {
                 E-commerce de moda.
                 <br />
                 <br />
-                Gabriel Spaniol fundou o E-commerce da Carmen Steffens em 2006, e
-                sempre esteve a frente do tráfego de um dos maiores sites de moda
-                do país. Nosso atendimento boutique, é sugerido para poucos
+                Gabriel Spaniol fundou o E-commerce da Carmen Steffens em 2006,
+                e sempre esteve a frente do tráfego de um dos maiores sites de
+                moda do país. Nosso atendimento boutique, é sugerido para poucos
                 clientes de grande porte, e possui foco total em resultados, com
-                profissionais senior com altíssima experiência atendendo todos os
-                clientes.
+                profissionais senior com altíssima experiência atendendo todos
+                os clientes.
               </>
             }
             btnText="Contato"
-            btnClick='#form'
+            btnClick="#form"
           />
         </Session>
       </div>
 
-
-      <Session id='consultoria' >
+      <Session id="consultoria">
         <Hero
           title="Consultoria"
-          img="/dburman5.jpg"
+          img="/consultoria.png"
           className="reverse"
           description={
             <>
-              Se você busca especialistas em tráfego pago em todas as
-              plataformas do mercado, nossa agência possui vasto expertise em
-              Varejo e E-commerce, desenvolvendo desde criativos até a
-              realização das camapanhas na META, Google, Linkedin e TIK TOK.
-              Nosso time já investiu mais de 50 milhões de reais em tráfego e
-              sabe otimizar campanhas assegurando excelente ROI, resultados
-              jamais vistos no mercado antes principalmente no caso do
-              E-commerce de moda.
+              Nossa consultoria é uma das mais completas do mercado de moda,
+              nosso CEO, Gabriel Spaniol cresceu no mercado de varejo e expandiu
+              a grife de sua família, a Carmen Steffens para 19 países,
+              implementando no grupo uma grande transformação digital, que
+              tornou a marca uma referência no segmento de moda e franquias. 
               <br />
               <br />
-              Gabriel Spaniol fundou o E-commerce da Carmen Steffens em 2006, e
-              sempre esteve a frente do tráfego de um dos maiores sites de moda
-              do país. Nosso atendimento boutique, é sugerido para poucos
-              clientes de grande porte, e possui foco total em resultados, com
-              profissionais senior com altíssima experiência atendendo todos os
-              clientes.
+              
+              Já nosso diretor de arte, Daniel Burman, possui uma carreira
+              brilhante na realização de grandes campanhas de moda. Varejo,
+              marketing, branding, fotografia arte, histórias que se propagam no
+              universo digital com a perfeita estrutura tecnológica é o que
+              somos capazes de tornar realidade. 
+              <br />
+              <br />
+              
+              Nossa área de tecnologia é
+              liderada por Marcelo Araújo, programador senior com experiência em
+              API's, integrações de sistemas, desenvolvimento de E-commerce,
+              OmniChannel, e tudo o que grandes varejistas precisam em sua
+              estrutura para performarem em vendas. Faça uma cotação de nossos
+              serviços!
             </>
           }
           btnText="Contato"
-          btnClick='#form'
+          btnClick="#form"
         />
       </Session>
 
-      <Session id='influencer'>
+      <Session id="influencer">
         <Hero
           title="Influencer Marketing"
           img="/influencer1.jpg"
@@ -226,20 +230,18 @@ export default function Home() {
             </>
           }
           btnText="Contato"
-          btnClick='#form'
+          btnClick="#form"
         />
       </Session>
 
-  
-        <Form />
+      <Form />
 
       <Session>
         <Loop />
       </Session>
       <Session>
-          <Cards />
+        <Cards />
       </Session>
-      
     </>
   );
 }

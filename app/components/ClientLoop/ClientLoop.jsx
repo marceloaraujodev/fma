@@ -28,7 +28,7 @@ export default function ClientLoop() {
 
   return (
     <div className={c.container}>
-      <p className={c.clients}>Clients</p>
+      <p className={c.clients}>Clientes</p>
       <div className={c.loop}>
         {tripleImages.map((img, index) => (
           <div key={`img-${index}`} className={c.imgCont}>
