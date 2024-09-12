@@ -193,7 +193,7 @@ export default function Home() {
               
               Nossa área de tecnologia é
               liderada por Marcelo Araújo, programador senior com experiência em
-              API's, integrações de sistemas, desenvolvimento de E-commerce,
+              API&apos;s, integrações de sistemas, desenvolvimento de E-commerce,
               OmniChannel, e tudo o que grandes varejistas precisam em sua
               estrutura para performarem em vendas. Faça uma cotação de nossos
               serviços!
