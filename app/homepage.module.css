@@ -21,7 +21,7 @@
 }
 
 .agencia::before{
-  top: -100px;
+  top: -50px;
   right: -250px;
   width: 100vw;
   height: 100%;
@@ -31,10 +31,10 @@
   url('/background-5.png');
 }
 .seo::before{
-  top: -100px;
+  top: 200px;
   right: -150px;
   width: 100vw;
-  height: 130%;
+  height: 100%;
   opacity: .3;
   background-image: url('/background-topright-white.png');
   background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%), 
