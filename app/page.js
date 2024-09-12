@@ -236,6 +236,10 @@ export default function Home() {
 
       <Form />
 
+      <div className={c.dividerCont}>
+          <div className={c.divider}></div>
+      </div>
+
       <Session>
         <Loop />
       </Session>

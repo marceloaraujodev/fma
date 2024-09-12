@@ -80,3 +80,18 @@
   url('/background-texture-white.png');
 
 } */
+
+.dividerCont{
+  min-height: 50px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  background: hsl(0, 0%, 0%);
+  width: 100%;
+}
+.divider{
+  height: 2px;
+  width: 80%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, hsl(0, 0%, 10%), hsl(0, 0%, 70%), hsl(0, 0%, 10%));
+}
