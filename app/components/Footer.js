@@ -29,7 +29,8 @@ export default function Footer() {
       window.open('https://www.instagram.com/');
     }
     if (type === 'message') {
-      router.push('/contact');
+      const mailtoLink = `mailto:${'atendimento@fashionmarketingagency.com.br/'}`
+      window.location.href = mailtoLink;
     }
   }
 
@@ -196,15 +197,35 @@ export default function Footer() {
               <div className={c.rightBox}>
                 <h2>Contact</h2>
 
-                <div
+                {/* <div
                   onClick={(e) => handleClick('phone', e.target.textContent)}
                   title="copy to clipboard"
-                >
+                 > 
                   <i className={`bi bi-telephone ${c.icons}`}>
                     {' '}
                     <span>55 47 9999 9999</span>
                   </i>
+                </div> */}
+
+<div
+                  onClick={(e) => handleClick('message')}
+                  title="Entre em contato"
+                  className={c.icons}
+                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-envelope-arrow-up"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                  </svg>
+                  <span>Entre em contato</span>
                 </div>
+
                 <div
                   onClick={(e) => handleClick('instagram')}
                   title="cinstagram"
@@ -225,24 +246,7 @@ export default function Footer() {
                   </i>
                 </div>
 
-                <div
-                  onClick={(e) => handleClick('message')}
-                  title="message us"
-                  className={c.icons}
-                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-envelope-arrow-up"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
-                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
-                  </svg>
-                  <span>message us</span>
-                </div>
+
                 <div
                   onClick={(e) => handleClick('address')}
                   title="endereço"

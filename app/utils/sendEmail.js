@@ -5,12 +5,12 @@ import nodemailer from 'nodemailer';
 // send mail function
 export default async function sendMail(config) {
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    host: "smtp.gmail.com",
+    // service: 'gmail',
+    host: "smtp.zoho.com",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL, 
+      user: process.env.ATENDIMENTO_EMAIL, 
       pass: process.env.APP_PASSWORD 
     },
     tls: {
@@ -20,8 +20,8 @@ export default async function sendMail(config) {
 
 
   let mailOptions = {
-    from: process.env.EMAIL, 
-    to: config.to, 
+    from: config.to,  // sender emailmarcelo
+    to: `${process.env.MARCELO_EMAIL}, ${process.env.GABRIEL_EMAIL}, ${process.env.DANIEL_EMAIL}`, // destination email
     subject: config.subject, 
     text: config.text 
   };

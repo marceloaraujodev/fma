@@ -36,8 +36,9 @@ export default function Form() {
       seo,
     };
     console.log(userContactForm);
-    // const res = await axios.post('/api/contact', userContactForm)
-    // console.log(userContactForm)
+    const res = await axios.post('/api/contact', userContactForm)
+    console.log(userContactForm)
+    console.log(res)
     setIsSending(false);
     notify('Formulário enviado com sucesso!');
   }

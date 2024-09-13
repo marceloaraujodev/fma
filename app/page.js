@@ -46,9 +46,7 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      </div>
 
-      <div className={c.seo}>
         <Session id="seo">
           <Hero
             title="SEO Search Engine Optimization"
@@ -72,9 +70,9 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      </div>
 
-      <div className={c.campanhas}>
+
+
         <Session id="campanhas">
           <Hero
             title="Campanhas institucionais"
@@ -103,9 +101,9 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      </div>
 
-      <div className={c.web}>
+
+
         <Session id="web">
           <Hero
             title={
@@ -134,13 +132,13 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      </div>
 
-      <div className={c.traffic}>
+
+
         <Session id="traffic">
           <Hero
             title="Tráfego Pago"
-            img="/growth2.png"
+            img="/growth2.jpg"
             className="reverse"
             description={
               <>
@@ -166,7 +164,7 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      </div>
+      
 
       <Session id="consultoria">
         <Hero
@@ -233,12 +231,12 @@ export default function Home() {
           btnClick="#form"
         />
       </Session>
-
+     
       <Form />
 
-      <div className={c.dividerCont}>
+      {/* <div className={c.dividerCont}>
           <div className={c.divider}></div>
-      </div>
+      </div> */}
 
       <Session>
         <Loop />
@@ -246,6 +244,7 @@ export default function Home() {
       <Session>
         <Cards />
       </Session>
+      </div>
     </>
   );
 }

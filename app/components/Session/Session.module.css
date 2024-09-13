@@ -1,9 +1,9 @@
 .session{
   padding: 100px 0;
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  position: relative;
+  position: relative; */
 }
 
 @media screen and (max-width: 600px){

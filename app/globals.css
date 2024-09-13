@@ -15,12 +15,13 @@ body{
   display: flex;
   flex-direction: column;
   background-color: #000000;
+  /* background-color: transparent; */
   color: white;
   min-height: 100vh;
   font-family: 'outfit';
-  z-index: 5;
-  overflow-x: hidden;
-  /* border: 1px solid red; */
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
+  z-index: 1;
 }
 .content{
   padding-top: 110px;

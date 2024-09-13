@@ -23,7 +23,7 @@
 }
 .logoImg{
   text-align: center;
-  padding: 0 0;
+  padding: 20px 0;
   z-index: 1000;
   position: absolute;
   top: 0;
@@ -171,7 +171,7 @@
 }
 
 .dividerTop .shapeFill{
-  fill: rgb(0, 0, 0);;
+  fill: rgb(0, 0, 0);
 }
 @media screen and (max-width: 768px){
   .row{
