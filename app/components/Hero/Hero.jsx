@@ -21,10 +21,11 @@ export default function Hero({title, className, img, description, btnText, btnCl
         <Image
           src={img}
           alt={title}
-          width={600}  // Arbitrary width (for Next.js optimization, but it will be controlled by CSS)
-          height={400}
+          width={0}  // Arbitrary width (for Next.js optimization, but it will be controlled by CSS)
+          height={0}
           className={c.img}
           style={{ width: '100%', height: 'auto' }}
+          sizes="100vw"
           priority
         />
       </motion.div>
