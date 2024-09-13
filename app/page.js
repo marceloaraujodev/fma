@@ -71,8 +71,6 @@ export default function Home() {
           />
         </Session>
 
-
-
         <Session id="campanhas">
           <Hero
             title="Campanhas institucionais"
@@ -101,8 +99,6 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-
-
 
         <Session id="web">
           <Hero
@@ -133,8 +129,6 @@ export default function Home() {
           />
         </Session>
 
-
-
         <Session id="traffic">
           <Hero
             title="Tráfego Pago"
@@ -164,86 +158,82 @@ export default function Home() {
             btnClick="#form"
           />
         </Session>
-      
 
-      <Session id="consultoria">
-        <Hero
-          title="Consultoria"
-          img="/consultoria.png"
-          className="reverse"
-          description={
-            <>
-              Nossa consultoria é uma das mais completas do mercado de moda,
-              nosso CEO, Gabriel Spaniol cresceu no mercado de varejo e expandiu
-              a grife de sua família, a Carmen Steffens para 19 países,
-              implementando no grupo uma grande transformação digital, que
-              tornou a marca uma referência no segmento de moda e franquias. 
-              <br />
-              <br />
-              
-              Já nosso diretor de arte, Daniel Burman, possui uma carreira
-              brilhante na realização de grandes campanhas de moda. Varejo,
-              marketing, branding, fotografia arte, histórias que se propagam no
-              universo digital com a perfeita estrutura tecnológica é o que
-              somos capazes de tornar realidade. 
-              <br />
-              <br />
-              
-              Nossa área de tecnologia é
-              liderada por Marcelo Araújo, programador senior com experiência em
-              API&apos;s, integrações de sistemas, desenvolvimento de E-commerce,
-              OmniChannel, e tudo o que grandes varejistas precisam em sua
-              estrutura para performarem em vendas. Faça uma cotação de nossos
-              serviços!
-            </>
-          }
-          btnText="Contato"
-          btnClick="#form"
-        />
-      </Session>
+        <Session id="consultoria">
+          <Hero
+            title="Consultoria"
+            img="/consultoria.png"
+            className="reverse"
+            description={
+              <>
+                Nossa consultoria é uma das mais completas do mercado de moda,
+                nosso CEO, Gabriel Spaniol cresceu no mercado de varejo e
+                expandiu a grife de sua família, a Carmen Steffens para 19
+                países, implementando no grupo uma grande transformação digital,
+                que tornou a marca uma referência no segmento de moda e
+                franquias.
+                <br />
+                <br />
+                Já nosso diretor de arte, Daniel Burman, possui uma carreira
+                brilhante na realização de grandes campanhas de moda. Varejo,
+                marketing, branding, fotografia arte, histórias que se propagam
+                no universo digital com a perfeita estrutura tecnológica é o que
+                somos capazes de tornar realidade.
+                <br />
+                <br />
+                Nossa área de tecnologia é liderada por Marcelo Araújo,
+                programador senior com experiência em API&apos;s, integrações de
+                sistemas, desenvolvimento de E-commerce, OmniChannel, e tudo o
+                que grandes varejistas precisam em sua estrutura para
+                performarem em vendas. Faça uma cotação de nossos serviços!
+              </>
+            }
+            btnText="Contato"
+            btnClick="#form"
+          />
+        </Session>
 
-      <Session id="influencer">
-        <Hero
-          title="Influencer Marketing"
-          img="/influencer1.jpg"
-          className="reverse"
-          description={
-            <>
-              Se você busca especialistas em tráfego pago em todas as
-              plataformas do mercado, nossa agência possui vasto expertise em
-              Varejo e E-commerce, desenvolvendo desde criativos até a
-              realização das camapanhas na META, Google, Linkedin e TIK TOK.
-              Nosso time já investiu mais de 50 milhões de reais em tráfego e
-              sabe otimizar campanhas assegurando excelente ROI, resultados
-              jamais vistos no mercado antes principalmente no caso do
-              E-commerce de moda.
-              <br />
-              <br />
-              Gabriel Spaniol fundou o E-commerce da Carmen Steffens em 2006, e
-              sempre esteve a frente do tráfego de um dos maiores sites de moda
-              do país. Nosso atendimento boutique, é sugerido para poucos
-              clientes de grande porte, e possui foco total em resultados, com
-              profissionais senior com altíssima experiência atendendo todos os
-              clientes.
-            </>
-          }
-          btnText="Contato"
-          btnClick="#form"
-        />
-      </Session>
-     
-      <Form />
+        <Session id="influencer">
+          <Hero
+            title="Influencer Marketing"
+            img="/influencer1.jpg"
+            className="reverse"
+            description={
+              <>
+                Se você deseja expandir seus negócios no universo digital, nossa
+                equipe conta com uma rede de contatos internacional de artistas,
+                modelos e influenciadores que podem contruir histórias incríveis
+                para sua marca. <br /> <br />
+                
+                Realizamos também fashion trips para diversas
+                cidades do mundo a custos jamais vistos no mercado para auxiliar
+                nossos clientes na criação de conteúdos com posicionamento e
+                estética de moda correta, nível altíssimo de qualidade
+                fotográfica e fashion films com direção de arte da FMA. 
+                <br /> <br />
+                Se você deseja fazer parte deste universo da moda, faça sua cotação
+                através de nossa agência e irá se surpreender com nossos
+                orçamentos e resultados. Conte sua história com pessoas
+                influentes através da Fashion Marketing Agency.
+              </>
+            }
+            btnText="Contato"
+            btnClick="#form"
+          />
+        </Session>
 
-      {/* <div className={c.dividerCont}>
+        <Form />
+
+        {/* <div className={c.dividerCont}>
           <div className={c.divider}></div>
       </div> */}
 
-      <Session>
-        <Loop />
-      </Session>
-      <Session>
-        <Cards />
-      </Session>
+        <Session>
+          <Loop />
+        </Session>
+        <Session>
+          <Cards />
+        </Session>
       </div>
     </>
   );
