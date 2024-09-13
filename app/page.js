@@ -62,7 +62,7 @@ export default function Home() {
                 <br />
                 Grande parte dos resultados de SEO também vem de trabalhos
                 realizados na estruturação correta de websites bem como
-                estratégias de conteúdos bem planejadas em implementadas. Nossa
+                estratégias de conteúdos bem planejadas e implementadas. Nossa
                 consultoria é completa e abrangente neste segmento.
               </>
             }
