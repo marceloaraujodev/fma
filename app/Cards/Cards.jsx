@@ -26,7 +26,7 @@ export default function Cards() {
       />
       <Card
         img="/marcelo.jpg"
-        name="Marcelo Araujo"
+        name="Marcelo Araújo"
         role="CTO"
         href="/members/marcelo"
         delay={0.5}
