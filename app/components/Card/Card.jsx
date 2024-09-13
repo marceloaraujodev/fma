@@ -28,7 +28,7 @@ export default function Card({name, role, description, img, href, delay}) {
                 src={img}
                 width={150}
                 height={150}
-                alt={'captain'}
+                alt='user photo'
                 className={c.photo}
               />
             </div>
