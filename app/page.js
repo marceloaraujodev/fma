@@ -22,24 +22,15 @@ export default function Home() {
             img="/dburman.jpg"
             description={
               <>
-                Somos a primeira agência do mercado que atua em três importantes
-                frentes do mercado digital, oferecendo um pacote de serviços
-                completo que gera valor e segurança para nossos clientes.
+                Somos uma agência boutique, com uma quantidade limitada de clientes, de forma a garantir qualidade excepcional de atendimento com profissionais e mentores de alto nível em cada área.                
                 <br />
                 <br />
-                Nossos serviços iniciam no desenvolvimento de E-commerce,
-                adentram o universo das Campanhas publicitárias, design de
-                criativos para Tráfego Pago, bem como toda gestão financeira e
-                de campanhas da Meta, Google, Linkedin, Tik Tok, em um trabalho
-                desenvolvido por especialistas que já investiram milhões na
-                internet e irão gastas verbas com muita responsabilidade,
-                assegurando excelente ROI.
+
+                Atuamos com excelência em três importantes frentes do mercado digital, oferecendo um pacote de serviços completo que gera valor e segurança, com um leque 360º de serviços que vão desde o desenvolvimento de E-commerce, criação e produção de Campanhas publicitárias, Shootings de apoio, Mídias Sociais, Branding, Design de criativos para Tráfego Pago, e toda gestão financeira e estratégica de campanhas da Meta, Google, Linkedin, Tik Tok.
                 <br />
                 <br />
-                Somos uma agência Boutique e não atendemos grande volume de
-                clientes, por isso possuímos somente profissionais de alto nível
-                em cada área, de forma a garantir qualidade excepcional de
-                atendimento
+
+                Nosso trabalho é desenvolvido por especialistas que já transformaram milhões investidos em resultados extraordinários, com extrema responsabilidade, foco e transparência, utilizando técnicas exclusivas que garantem excelente ROI e uma imagem de marca consistente, relevante e úníssona.
               </>
             }
             btnText="Contato"
