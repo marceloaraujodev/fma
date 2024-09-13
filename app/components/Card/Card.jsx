@@ -1,11 +1,9 @@
 'use client';
 import { useRef } from 'react';
-import { motion, useInView, useScroll, useTransform } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import Link from 'next/link'
-// import PageContent from '../components/PageContent';
 import Image from 'next/image';
-// import Title from '../components/Title';
-import c from './Card.module.css';
+import c from './Card.module.css'; 
 
 export default function Card({name, role, description, img, href, delay}) {
   const ref = useRef(null);
