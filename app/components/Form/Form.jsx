@@ -9,8 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import c from './Form.module.css';
 
 export default function Form() {
-  const [name, setName] = useState('Marcelo Araujo');
-  const [email, setEmail] = useState('test@example.us');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [web, setWeb] = useState(false);
   const [campanhas, setCampanhas] = useState(false);
   const [consultoria, setConsultoria] = useState(false);
@@ -70,6 +70,7 @@ export default function Form() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
+                placeholder='Nome'
               />
 
               <label htmlFor="email">Email</label>
@@ -81,6 +82,7 @@ export default function Form() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 id="email"
+                placeholder='Email'
               />
             </section>
           </div>
