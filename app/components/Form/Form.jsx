@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import axios from 'axios';
@@ -10,6 +10,7 @@ import c from './Form.module.css';
 
 export default function Form() {
   const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [web, setWeb] = useState(false);
   const [campanhas, setCampanhas] = useState(false);
@@ -17,10 +18,28 @@ export default function Form() {
   const [seo, setSeo] = useState(false);
   const [isSending, setIsSending] = useState(false);
 
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   const notify = (message) => toast(message);
+
+  const formatPhoneNumber = (value) => {
+    // Remove all non-numeric characters
+    const cleanValue = value.replace(/\D/g, '');
+  
+    // Apply the format (47) 99200-9122
+    if (cleanValue.length <= 2) {
+      return cleanValue;
+    }
+    if (cleanValue.length <= 4) {
+      return `(${cleanValue.slice(0, 2)}) ${cleanValue.slice(2)}`;
+    }
+    if (cleanValue.length <= 7) {
+      return `(${cleanValue.slice(0, 2)}) ${cleanValue.slice(2, 7)}`;
+    }
+    return `(${cleanValue.slice(0, 2)}) ${cleanValue.slice(2, 7)}-${cleanValue.slice(7, 11)}`;
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -30,6 +49,7 @@ export default function Form() {
     const userContactForm = {
       name,
       email,
+      phone,
       web,
       campanhas,
       consultoria,
@@ -83,6 +103,17 @@ export default function Form() {
                 required
                 id="email"
                 placeholder='Email'
+              />
+              <label htmlFor="phone">Telefone</label>
+              <input
+                type="tel"
+                className={c.input}
+                name="phone"
+                value={phone}
+                onChange={(e) => setPhone(formatPhoneNumber(e.target.value))}
+                required
+                id="phone"
+                placeholder='phone'
               />
             </section>
           </div>
