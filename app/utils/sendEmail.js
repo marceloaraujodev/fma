@@ -25,7 +25,7 @@ export default async function sendMail(config) {
     subject: config.subject, 
     text: config.text 
   };
-  console.log('mails options from sendEmail code',mailOptions)
+
 
   try {
     let info = await transporter.sendMail(mailOptions);

@@ -3,7 +3,7 @@ import { Inter, Outfit, Roboto, Work_Sans } from "next/font/google";
 import Nav from "./components/Nav";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-import "./globals.css";
+// import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,21 +33,31 @@ export const metadata = {
   description: "Fashion Marketing Agency",
 };
 
+const error = true;
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-        className={`${outfit.className} ${workSans.className} antialiased`}
-      >
-        <Nav />
-        <main className='content'>
-        <MainContent>
-          {children}
-        </MainContent>
-        </main>
-        <Footer />
-        
-      </body>
-    </html>
-  );
+  if (error) {
+    return (
+      <html lang="en">
+        <body style={{ fontWeight: "bold", fontSize: "24px" }}>
+          502 Service Temporarily Unavailable
+        </body>
+      </html>
+    );
+  }
+
+  // return (
+  //   <html lang="en">
+  //     <body
+  //       className={`${outfit.className} ${workSans.className} antialiased`}
+  //     >
+  //       <Nav />
+  //       <main className='content'>
+  //       <MainContent>
+  //         {children}
+  //       </MainContent>
+  //       </main>
+  //       <Footer />
+  //     </body>
+  //   </html>
+  // );
 }
