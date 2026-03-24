@@ -19,9 +19,9 @@ export async function POST(req, res) {
       Nome: ${name}\nEmail: ${userEmail}\nPhone:${phone}\nCampanhas: ${campanhas}\nConsultoria: ${consultoria}\nSEO: ${seo}\nWeb: ${web}`,
     };
 
-    console.log(mailOptions);
-    await sendMail(mailOptions);
-    console.log('mail sent successfully');
+    // turn email on only when he pays me for brazilianfans
+    // await sendMail(mailOptions);
+
 
     return NextResponse.json({
       success: true,
