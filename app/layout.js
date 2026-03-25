@@ -35,29 +35,29 @@ export const metadata = {
 
 const error = true;
 export default function RootLayout({ children }) {
-  if (error) {
-    return (
-      <html lang="en">
-        <body style={{ fontWeight: "bold", fontSize: "24px" }}>
-          502 Service Temporarily Unavailable
-        </body>
-      </html>
-    );
-  }
+  // if (error) {
+  //   return (
+  //     <html lang="en">
+  //       <body style={{ fontWeight: "bold", fontSize: "24px" }}>
+  //         502 Service Temporarily Unavailable
+  //       </body>
+  //     </html>
+  //   );
+  // }
 
-  // return (
-  //   <html lang="en">
-  //     <body
-  //       className={`${outfit.className} ${workSans.className} antialiased`}
-  //     >
-  //       <Nav />
-  //       <main className='content'>
-  //       <MainContent>
-  //         {children}
-  //       </MainContent>
-  //       </main>
-  //       <Footer />
-  //     </body>
-  //   </html>
-  // );
+  return (
+    <html lang="en">
+      <body
+        className={`${outfit.className} ${workSans.className} antialiased`}
+      >
+        <Nav />
+        <main className='content'>
+        <MainContent>
+          {children}
+        </MainContent>
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
 }
