@@ -20,7 +20,7 @@ export async function POST(req, res) {
     };
 
     // turn email on only when he pays me for brazilianfans
-    // await sendMail(mailOptions);
+    await sendMail(mailOptions);
 
 
     return NextResponse.json({

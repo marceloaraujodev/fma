@@ -3,7 +3,7 @@ import { Inter, Outfit, Roboto, Work_Sans } from "next/font/google";
 import Nav from "./components/Nav";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-// import "./globals.css";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
