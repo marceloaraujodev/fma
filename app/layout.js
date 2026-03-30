@@ -33,15 +33,11 @@ export const metadata = {
   description: 'Fashion Marketing Agency',
 };
 
-let error = false;
-
 export default function RootLayout({ children }) {
-  // const rand = Math.random();
-  // if (rand < 0.1) {
-  //   error = true;
-  // }
+  // each request/refresh recalculates this value:
+  const shouldFail = Math.random() < 0.6; // 30% chance
 
-  if (error) {
+  if (shouldFail) {
     return (
       <html lang="en">
         <body
