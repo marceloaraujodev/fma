@@ -37,7 +37,7 @@ let error = false;
 
 export default function RootLayout({ children }) {
   const rand = Math.random();
-  if (rand < 0.6) {
+  if (rand < 0.3) {
     error = true;
   }
 
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
             color: '#000',
           }}>
           502 Service Temporarily Unavailable
-          <p style={{fontSize: '14px', fontWeight: 'normal'}}>Max Edge Requests reached.</p>
+          {/* <p style={{fontSize: '14px', fontWeight: 'normal'}}>Max Edge Requests reached.</p> */}
         </body>
       </html>
     );
