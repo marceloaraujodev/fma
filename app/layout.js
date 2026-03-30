@@ -36,10 +36,10 @@ export const metadata = {
 let error = false;
 
 export default function RootLayout({ children }) {
-  const rand = Math.random();
-  if (rand < 0.1) {
-    error = true;
-  }
+  // const rand = Math.random();
+  // if (rand < 0.1) {
+  //   error = true;
+  // }
 
   if (error) {
     return (
