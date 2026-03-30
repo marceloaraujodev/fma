@@ -35,7 +35,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   // each request/refresh recalculates this value:
-  const shouldFail = Math.random() < 0.6; // 30% chance
+  const shouldFail = Math.random() < 0.8; // 30% chance
 
   if (shouldFail) {
     return (
