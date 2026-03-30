@@ -13,9 +13,8 @@ export async function POST(req, res) {
     const mailOptions = {
       from: userEmail, // USER
       to: process.env.ATENDIMENTO_EMAIL, // SENDER email
-      bcc: process.env.EMAILME,
       subject: 'Novo formulário de contato',
-      text: `Test with data from form:
+      text: `Formulário de contato recebido:\n
       Nome: ${name}\nEmail: ${userEmail}\nPhone:${phone}\nCampanhas: ${campanhas}\nConsultoria: ${consultoria}\nSEO: ${seo}\nWeb: ${web}`,
     };
 

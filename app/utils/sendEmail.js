@@ -20,8 +20,8 @@ export default async function sendMail(config) {
 
 
   let mailOptions = {
-    from: config.to,  // sender emailmarcelo
-    to: `${process.env.MARCELO_EMAIL}, ${process.env.GABRIEL_EMAIL}, ${process.env.DANIEL_EMAIL}`, // destination email
+    from: config.to,  
+    to: `${process.env.GABRIEL_EMAIL}`, // destination email
     subject: config.subject, 
     text: config.text 
   };
