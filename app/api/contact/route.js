@@ -19,7 +19,6 @@ export async function POST(req, res) {
       Nome: ${name}\nEmail: ${userEmail}\nPhone:${phone}\nCampanhas: ${campanhas}\nConsultoria: ${consultoria}\nSEO: ${seo}\nWeb: ${web}`,
     };
 
-    // turn email on only when he pays me for brazilianfans
     await sendMail(mailOptions);
 
 

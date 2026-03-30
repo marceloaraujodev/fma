@@ -34,25 +34,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // each request/refresh recalculates this value:
-  const shouldFail = Math.random() < 0.8; // 30% chance
 
-  if (shouldFail) {
-    return (
-      <html lang="en">
-        <body
-          style={{
-            fontWeight: 'bold',
-            fontSize: '24px',
-            backgroundColor: '#fff',
-            color: '#000',
-          }}>
-          429 Too Many Requests
-          {/* <p style={{fontSize: '14px', fontWeight: 'normal'}}>Max Edge Requests reached.</p> */}
-        </body>
-      </html>
-    );
-  }
 
   return (
     <html lang="en">
